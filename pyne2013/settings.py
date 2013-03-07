@@ -3,7 +3,7 @@
 # Django settings for pyne2013 project.
 import os
 
-DEBUG = False
+DEBUG = bool(os.environ.get('DJANGO_DEBUG', False))
 TEMPLATE_DEBUG = DEBUG
 PROJECT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 
@@ -76,7 +76,7 @@ AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 AWS_STORAGE_BUCKET_NAME = os.environ.get('S3_BUCKET_NAME')
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'n%iln*503#6gh6p%@t86)abh0_i4%7euqbd71q)s92lx%l9gh&'
+SECRET_KEY = os.environ.get('SECRET_KEY', 'pyne2013_dev')
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
