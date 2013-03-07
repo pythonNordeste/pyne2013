@@ -1,0 +1,108 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-Frame-Options" content="deny">
+    <meta name="author" content="Mário <macndesign@gmail.com>">
+    <meta name="description" content="Primeira conferência Python que reune os PUGs (Python User Groups) da região Nordeste do Brasil">
+    <meta name="keywords" content="palestras,python,nordeste">
+    <meta name="viewport" content="width=device-width">
+    <title>Python Nordeste 2013</title>
+    <link rel="stylesheet" href="{% static "css/normalize.css" %}">
+    <link rel="stylesheet" href="{% static "css/main.css" %}">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <!--[if IE]><script src="{% static "js/html5.js" %}"></script><![endif]-->
+    <script type="text/javascript" src="{% static "js/jquery.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/flexie.min.js" %}"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+<header role="banner" class="clearfix">
+    <!-- Define uma região que possui, principalmente, conteúdo de orientação do site e não conteúdo específico da página. -->
+    <hgroup>
+        <h1 class="ir">Python Nordeste 2013</h1>
+        <h2><time datetime="2013-05-24T08:00Z">24</time> e <time datetime="2013-05-25T08:00Z">25 de Maio</time><span id="cidade-uf">Fortaleza - CE</span></h2>
+    </hgroup>
+</header>
+<nav role="navigation" id="menu" class="clearfix">
+    <!-- Define uma coleção de elementos de navegação (geralmente links) para navegar no documento ou em documentos relacionados. -->
+    <a href="#evento">Evento</a>
+    <a href="#patrocinadores">Patrocinadores</a>
+    <a href="#programacao">Programação</a>
+    <a href="#palestrantes">Palestrantes</a>
+    <a href="#local">Local</a>
+    <a href="#inscricoes">Inscrições</a>
+    <a href="#submissao">Submissão</a>
+    <a href="#contato">Contato</a>
+</nav>
+<main class="clearfix">
+    <section role="main">
+        <!-- Define o conteúdo principal do documento. -->
+        <article role="article" id="evento">
+            <!-- Define uma seção de uma página que consiste em uma composição que forma uma parte independente do documento. -->
+            <h3>O Evento <a href="#menu" class="go-top">↑ menu</a></h3>
+            <div class="article-content rotacionar-direita">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac orci eu erat pharetra suscipit. Morbi iaculis ante ac arcu sollicitudin ac convallis eros elementum. Proin lacus lorem, congue a fringilla id, cursus sed metus. Duis porttitor malesuada elit vitae varius. Vivamus tincidunt est quis velit blandit semper. Etiam dignissim justo id nunc euismod non euismod sapien varius. Nulla tempor, magna auctor pellentesque iaculis, sem mi sollicitudin orci, et elementum est tortor sed augue. Nullam rhoncus, urna vel eleifend fringilla, velit lorem imperdiet dolor, eu scelerisque diam purus sit amet enim. Cras diam dui, pretium et luctus at, mollis a tellus. Integer pellentesque adipiscing hendrerit. Nunc sed facilisis nibh. Phasellus dictum euismod neque vitae tristique. In lobortis luctus sagittis. Donec molestie congue elit sed luctus.</p>
+                <p>Curabitur laoreet, odio et eleifend euismod, metus nulla mollis nulla, elementum ullamcorper dolor lorem vitae ipsum. Nullam eget nunc magna. Nulla elit sapien, facilisis id interdum sed, laoreet ac nisl. Vestibulum iaculis ligula et leo ultrices venenatis. Morbi nec nunc augue. Fusce diam turpis, facilisis scelerisque fermentum id, egestas ut magna. Pellentesque vestibulum venenatis libero, sit amet facilisis massa interdum sit amet. Vestibulum sed nisl sed diam mollis imperdiet a quis dolor.</p>
+            </div>
+        </article>
+        <article role="article" id="programacao">
+            <h3>Programação <a href="#menu" class="go-top">↑ menu</a></h3>
+            <div class="article-content">
+                <section class="dias">
+                    <article class="dia">
+                        <h4>Dia 24</h4>
+                        <dl>
+                            <dt>Abertura <time datetime="2013-05-24T08:00Z">8:00h</time></dt>
+                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac orci eu erat pharetra suscipit. Morbi iaculis ante ac arcu sollicitudin ac convallis eros elementum.</dd>
+                            <dt>Palestra Django - Henrique Bastos <time datetime="2013-05-24T09:00Z">9:00h</time></dt>
+                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac orci eu erat pharetra suscipit. Morbi iaculis ante ac arcu sollicitudin ac convallis eros elementum.</dd>
+                        </dl>
+                    </article>
+                    <article class="dia">
+                        <h4>Dia 25</h4>
+                        <dl>
+                            <dt>Abertura <time datetime="2013-05-25T08:00Z">8:00h</time></dt>
+                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
+                            <dt>Palestra Python - Luciano Ramalho <time datetime="2013-05-25T09:00Z">9:00h</time></dt>
+                            <dd>Lorem ipsum dolor sit amet.</dd>
+                        </dl>
+                    </article>
+                </section>
+            </div>
+        </article>
+        <article role="article" id="local">
+            <h3>Local <a href="#menu" class="go-top">↑ menu</a></h3>
+            <div class="article-content rotacionar-esquerda" style="padding: 0">
+                <iframe style="margin: 0" width="100%" height="320" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.br/maps?ie=UTF8&amp;q=FA7+fortaleza&amp;fb=1&amp;gl=br&amp;hq=FA7&amp;hnear=0x7c74c3f464c783f:0x4661c60a0c6b37ca,Fortaleza+-+CE&amp;cid=0,0,4418356474795646493&amp;t=m&amp;ll=-3.769686,-38.483208&amp;spn=0.004282,0.007499&amp;z=17&amp;iwloc=A&amp;output=embed"></iframe>
+            </div>
+        </article>
+        <article role="article" id="inscricoes">
+            <h3>Inscrições <a href="#menu" class="go-top">↑ menu</a></h3>
+            <div class="article-content rotacionar-direita">
+                <p>Texto informando como o usuário deverá proceder para se inscrever no evento.</p>
+            </div>
+        </article>
+        <article role="article" id="contato">
+            <h3>Contato <a href="#menu" class="go-top">↑ menu</a></h3>
+            <div class="article-content rotacionar-esquerda">
+                <form action="." method="post">
+                    <label><span class="rotulo">Nome: </span><input type="text" placeholder="Nome" maxlength="75" required></label>
+                    <label><span class="rotulo">Email: </span><input type="email" placeholder="Email" maxlength="120" required></label>
+                    <label><span class="rotulo">Mensagem: </span><textarea placeholder="Mensagem" maxlength="255" rows="5" required></textarea></label>
+                    <div class="form-actions"><input type="submit" value="Enviar"></div>
+                </form>
+            </div>
+        </article>
+    </section>
+</main>
+<footer role="contentinfo" class="clearfix">
+<!-- footer: role=”contentinfo”. Define uma região que contém informações sobre o documento. -->
+    <address>Fortaleza - CE</address>
+</footer>
+</body>
+</html>

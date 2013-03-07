@@ -1,0 +1,6 @@
+Django==1.5
+boto==2.8.0
+distribute==0.6.28
+django-storages==1.1.6
+gunicorn==0.17.2
+wsgiref==0.1.2

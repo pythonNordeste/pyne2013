@@ -1,0 +1,224 @@
+/* Definindo as fontes do site */
+@font-face {
+    font-family: "Xilosa";
+    src: url(../fonts/xilosa.ttf);
+}
+@font-face {
+    font-family: "Eldes Cordel 1";
+    src: url(../fonts/eldes_cordel_1_lite.ttf);
+}
+
+/* Estilos globais */
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: "Georgia", Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    background: #ffff99; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #ffff99 0%, #f7ce00 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffff99), color-stop(100%,#f7ce00)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  #ffff99 0%,#f7ce00 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  #ffff99 0%,#f7ce00 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  #ffff99 0%,#f7ce00 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  #ffff99 0%,#f7ce00 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff99', endColorstr='#f7ce00',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-attachment: fixed;
+}
+
+/* Definindo a largura dos elementos */
+header[role=banner], nav#menu, section[role=main], footer[role=contentinfo] {
+    display: block;
+    width: 992px;
+    margin: 0 auto;
+}
+
+section[role=main] {
+    width: 896px;
+    padding: 0 48px;
+    position: relative;
+    top: -50px;
+}
+
+/* Header */
+header[role=banner] {
+    height: 187px;
+    margin-top: 30px;
+}
+header[role=banner] hgroup h1 {
+    float: left;
+    width: 476px;
+    height: 187px;
+    background-image: url("../img/logo.png");
+    margin: 0;
+}
+header[role=banner] hgroup h2 {
+    float: right;
+    font-family: "Eldes Cordel 1", Arial, sans-serif;
+    margin-top: 45px;
+    font-size: 30px;
+    margin-right: 50px;
+    text-align: right;
+}
+header[role=banner] hgroup h2 span#cidade-uf {
+    display: block;
+    font-size: 20px;
+    position: relative;
+}
+
+/* Menu */
+nav#menu {
+    background: url("../img/menu.png") no-repeat top center;
+    text-align: center;
+    height: 66px;
+    padding-top: 20px;
+    position: relative;
+    top: -20px;
+    clear: both;
+}
+nav#menu a {
+    font-family: "Xilosa", Arial, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 15px;
+}
+
+/* Articles */
+article[role=article] h3 {
+    font-family: "Xilosa", Arial, sans-serif;
+    font-size: 80px;
+    margin: 0;
+    padding-top: 15px;
+}
+article[role=article] div.article-content {
+    padding: 1px 20px;
+    border: solid 12px #000;
+    background: #ffffff; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #e8e6da 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(100%,#e8e6da)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#e8e6da 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  #ffffff 0%,#e8e6da 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  #ffffff 0%,#e8e6da 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  #ffffff 0%,#e8e6da 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8e6da',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+article[role=article] h3 a.go-top:first-letter {
+    font-size: 20px;
+}
+article[role=article] h3 a.go-top {
+    font-size: 15px;
+    float: right;
+    text-decoration: none;
+    color: #b79900;
+    margin-top: 30px;
+}
+
+/* Programação da PyNE 2013 */
+section.dias {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+section.dias article.dia {
+    -webkit-flex: 1;
+    -ms-flexbox: 1;
+    flex: 1;
+    padding: 0;
+}
+section.dias article.dia h4 {
+    background: #000;
+    font-family: "Xilosa", Arial, sans-serif;
+    font-size: 25px;
+    color: #fff;
+    padding: 5px 15px;
+
+    /* chrome hack */
+    display: block;
+    -webkit-margin-before: 20px;
+    -webkit-margin-after: 0;
+    font-weight: bold;
+}
+section.dias article.dia dl {
+    /* chrome hack */
+    display: block;
+    -webkit-margin-before: 20px;
+    -webkit-margin-after: 0;
+}
+section.dias article.dia:first-child dl {
+    border-right: dotted 1px #b79900;
+}
+section.dias article.dia dl dt {
+    font-family: "Xilosa", Arial, sans-serif;
+    font-size: 20px;
+}
+section.dias article.dia dl dd {
+    font-size: 0.8em;
+    margin: 0 13px 40px 13px;
+}
+section.dias article.dia dl dt {
+    padding: 5px 13px;
+}
+section.dias article.dia dl dt time {
+    float: right;
+    color: #b79900;
+}
+
+/* Contato */
+article#contato > div {
+    padding: 10px;
+}
+article#contato div form label {
+    display: block;
+    padding-bottom: 10px;
+}
+article#contato div form label span.rotulo {
+    display: none;
+}
+article#contato div form label input[type=text],
+article#contato div form label input[type=email],
+article#contato div form label textarea,
+article#contato div form div input[type=submit] {
+    font-family: "Xilosa", Arial, sans-serif;
+    font-size: 16px;
+    border: solid 4px #000;
+    padding: 3px;
+    width: 400px;
+}
+article#contato div form div input[type=submit] {
+    font-size: 22px;
+    background: #000;
+    color: #fff;
+    width: 413px;
+}
+
+/* Footer */
+footer {
+    background: url("../img/footer.png") no-repeat top center;
+    height: 216px;
+}
+footer address {
+    font-family: "Eldes Cordel 1", Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 180px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Rotacionar */
+.rotacionar-direita {
+    transform:rotate(2deg);
+    -ms-transform:rotate(2deg); /* IE 9 */
+    -moz-transform:rotate(2deg); /* Firefox */
+    -webkit-transform:rotate(2deg); /* Safari and Chrome */
+    -o-transform:rotate(2deg); /* Opera */
+}
+.rotacionar-esquerda {
+    transform:rotate(-2deg);
+    -ms-transform:rotate(-2deg); /* IE 9 */
+    -moz-transform:rotate(-2deg); /* Firefox */
+    -webkit-transform:rotate(-2deg); /* Safari and Chrome */
+    -o-transform:rotate(-2deg); /* Opera */
+}
