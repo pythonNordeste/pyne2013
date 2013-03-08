@@ -6,9 +6,14 @@ Instalação
 
 - make setup
 
+Deploy
+------
+
+- make deploy
+
 Contribuidores
 --------------
-- Mário Chaves (@macndesign)
+- Mário Chaves ( @macndesign )
 - Fábio Cerqueira (@fabiocerqueira)
 - Renato Oliveira (@renatooliveira)
 - Fernando Rocha (@fernandogrd)
