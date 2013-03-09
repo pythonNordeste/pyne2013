@@ -166,6 +166,11 @@ section.dias article.dia dl dt time {
     color: #b79900;
 }
 
+/* Messages */
+article#messages div {
+    margin-top: 25px;
+}
+
 /* Contato */
 article#contato > div {
     padding: 10px;

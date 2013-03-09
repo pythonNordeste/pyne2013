@@ -1,0 +1,4 @@
+{% for field in form %}
+    <small>{{ field.errors }}</small>
+    <label><span class="rotulo">{{ field.name }} </span>{{ field }}</label>
+{% endfor %}

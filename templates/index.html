@@ -1,3 +1,4 @@
+{% load format_form %}
 {% load static from staticfiles %}
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -42,6 +43,18 @@
 <main class="clearfix">
     <section role="main">
         <!-- Define o conteúdo principal do documento. -->
+
+        <article role="article" id="messages">
+        {% if messages %}
+        <div class="article-content">
+            {% for message in messages %}
+            <p{% if message.tags %} class="{{ message.tags }}"{% endif %}><b>{{ message }}</b></p>
+            {% endfor %}
+        </div>
+        {% endif %}
+        </article>
+
+
         <article role="article" id="evento">
             <!-- Define uma seção de uma página que consiste em uma composição que forma uma parte independente do documento. -->
             <h3>O Evento <a href="#menu" class="go-top">↑ menu</a></h3>
@@ -92,9 +105,8 @@
             <h3>Contato <a href="#menu" class="go-top">↑ menu</a></h3>
             <div class="article-content rotacionar-esquerda">
                 <form action="." method="post">
-                    <label><span class="rotulo">Nome: </span><input type="text" placeholder="Nome" maxlength="75" required></label>
-                    <label><span class="rotulo">Email: </span><input type="email" placeholder="Email" maxlength="120" required></label>
-                    <label><span class="rotulo">Mensagem: </span><textarea placeholder="Mensagem" maxlength="255" rows="5" required></textarea></label>
+                    {% csrf_token %}
+                    {{ form|format_form  }}
                     <div class="form-actions"><input type="submit" value="Enviar"></div>
                 </form>
             </div>

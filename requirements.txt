@@ -3,3 +3,6 @@ boto==2.8.0
 django-storages==1.1.6
 gunicorn==0.17.2
 wsgiref==0.1.2
+South==0.7.6
+dj-database-url==0.2.1
+flake8==1.7.0

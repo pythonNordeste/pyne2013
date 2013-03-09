@@ -2,6 +2,8 @@
 #-*- coding: utf-8 -*-
 # Django settings for pyne2013 project.
 import os
+import dj_database_url
+from os.path import join
 
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', False))
 TEMPLATE_DEBUG = DEBUG
@@ -10,20 +12,18 @@ PROJECT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 ADMINS = (
     ('Fábio Cerqueira', 'fabio@cerqueira.me'),
     ('Renato Oliveira', 'renato@labcodes.com.br'),
+    ('Fernando Rocha', 'fernandogrd@gmail.com'),
 )
 
 MANAGERS = ADMINS
 
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
-    }
+    'default': dj_database_url.config(
+        default='sqlite:///{0}'.format(join(PROJECT_DIR, 'pugpe.db')),
+    )
 }
+
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
@@ -112,7 +112,12 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.admin',
+
     'gunicorn',
+    'south',
+
+    'contact',
 )
 
 # A sample logging configuration. The only tangible logging
