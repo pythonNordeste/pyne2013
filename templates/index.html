@@ -38,7 +38,7 @@
     <a href="#local">Local</a>
     <a href="#inscricoes">Inscrições</a>
     <a href="#submissao">Submissão</a>
-    <a href="#contato">Contato</a>
+    <a id="lnk-contact" href="#contato">Contato</a>
 </nav>
 <main class="clearfix">
     <section role="main">
@@ -113,16 +113,6 @@
                 <iframe src="http://eventick.com.br/python-nordeste/embedded" frameborder="0" height="256px" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
             </div>
         </article>
-        <article role="article" id="contato">
-            <h3>Contato <a href="#menu" class="go-top">↑ menu</a></h3>
-            <div class="article-content rotacionar-esquerda">
-                <form action="." method="post">
-                    {% csrf_token %}
-                    {{ form|format_form  }}
-                    <div class="form-actions"><input type="submit" value="Enviar"></div>
-                </form>
-            </div>
-        </article>
     </section>
 </main>
 <footer role="contentinfo" class="clearfix">
@@ -142,6 +132,36 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
+</script>
+<script>(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/4iNXNRCwadKyVUXWYK0Ig.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})()</script>
+<script>
+UserVoice = window.UserVoice || [];
+UserVoice.push(['showTab', 'classic_widget', {
+  mode: 'full',
+  primary_color: '#cc6d00',
+  link_color: '#007dbf',
+  default_mode: 'support',
+  forum_id: 197928,
+  tab_label: 'Fale Conosco',
+  tab_color: '#cc6d00',
+  tab_position: 'bottom-right',
+  tab_inverted: false
+}]);
+$(function(){
+    $("#lnk-contact").on("click", function(e){
+        UserVoice.push(['showLightbox', 'classic_widget', {
+          mode: 'full',
+          primary_color: '#cc6d00',
+          link_color: '#007dbf',
+          default_mode: 'support',
+          forum_id: 197928,
+          tab_label: 'Fale Conosco',
+          tab_color: '#cc6d00',
+          tab_position: 'bottom-right',
+          tab_inverted: false
+        }]);
+    });
+});
 </script>
 </body>
 </html>
