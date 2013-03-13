@@ -1,59 +1,5 @@
-{% load format_form %}
-{% load static from staticfiles %}
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta http-equiv="X-Frame-Options" content="deny">
-    <meta name="author" content="Mário <macndesign@gmail.com>">
-    <meta name="description" content="Primeira conferência Python que reune os PUGs (Python User Groups) da região Nordeste do Brasil">
-    <meta name="keywords" content="palestras,python,nordeste">
-    <meta name="viewport" content="width=device-width">
-    <title>Python Nordeste 2013</title>
-    <link rel="stylesheet" href="{% static "css/normalize.css" %}">
-    <link rel="stylesheet" href="{% static "css/main.css" %}">
-    <link rel="stylesheet" href="{% static "css/style.css" %}">
-    <!--[if IE]><script src="{% static "js/html5.js" %}"></script><![endif]-->
-    <script type="text/javascript" src="{% static "js/jquery.min.js" %}"></script>
-    <script type="text/javascript" src="{% static "js/flexie.min.js" %}"></script>
-</head>
-<body>
-<!--[if lt IE 7]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-<![endif]-->
-<header role="banner" class="clearfix">
-    <!-- Define uma região que possui, principalmente, conteúdo de orientação do site e não conteúdo específico da página. -->
-    <hgroup>
-        <h1 class="ir">Python Nordeste 2013</h1>
-        <h2><time datetime="2013-05-24T08:00Z">24</time> e <time datetime="2013-05-25T08:00Z">25 de Maio</time><span id="cidade-uf">Fortaleza - CE</span></h2>
-    </hgroup>
-</header>
-<nav role="navigation" id="menu" class="clearfix">
-    <!-- Define uma coleção de elementos de navegação (geralmente links) para navegar no documento ou em documentos relacionados. -->
-    <a href="#evento">Evento</a>
-    <a href="#patrocinadores">Patrocinadores</a>
-    <a href="#programacao">Programação</a>
-    <a href="#palestrantes">Palestrantes</a>
-    <a href="#local">Local</a>
-    <a href="#inscricoes">Inscrições</a>
-    <a href="#submissao">Submissão</a>
-    <a id="lnk-contact" href="#contato">Contato</a>
-</nav>
-<main class="clearfix">
-    <section role="main">
-        <!-- Define o conteúdo principal do documento. -->
-
-        <article role="article" id="messages">
-        {% if messages %}
-        <div class="article-content">
-            {% for message in messages %}
-            <p{% if message.tags %} class="{{ message.tags }}"{% endif %}><b>{{ message }}</b></p>
-            {% endfor %}
-        </div>
-        {% endif %}
-        </article>
-
+{% extends "base.html" %}
+{% block content %}
 
         <article role="article" id="evento">
             <!-- Define uma seção de uma página que consiste em uma composição que forma uma parte independente do documento. -->
@@ -113,55 +59,5 @@
                 <iframe src="http://eventick.com.br/python-nordeste/embedded" frameborder="0" height="256px" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
             </div>
         </article>
-    </section>
-</main>
-<footer role="contentinfo" class="clearfix">
-<!-- footer: role=”contentinfo”. Define uma região que contém informações sobre o documento. -->
-    <address>Fortaleza - CE</address>
-</footer>
-<script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39112831-1']);
-  _gaq.push(['_setDomainName', 'pythonnordeste.org']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-<script>(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/4iNXNRCwadKyVUXWYK0Ig.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})()</script>
-<script>
-UserVoice = window.UserVoice || [];
-UserVoice.push(['showTab', 'classic_widget', {
-  mode: 'full',
-  primary_color: '#cc6d00',
-  link_color: '#007dbf',
-  default_mode: 'support',
-  forum_id: 197928,
-  tab_label: 'Fale Conosco',
-  tab_color: '#cc6d00',
-  tab_position: 'bottom-right',
-  tab_inverted: false
-}]);
-$(function(){
-    $("#lnk-contact").on("click", function(e){
-        UserVoice.push(['showLightbox', 'classic_widget', {
-          mode: 'full',
-          primary_color: '#cc6d00',
-          link_color: '#007dbf',
-          default_mode: 'support',
-          forum_id: 197928,
-          tab_label: 'Fale Conosco',
-          tab_color: '#cc6d00',
-          tab_position: 'bottom-right',
-          tab_inverted: false
-        }]);
-    });
-});
-</script>
-</body>
-</html>
+{% endblock %}
