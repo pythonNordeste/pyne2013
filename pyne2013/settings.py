@@ -116,6 +116,7 @@ INSTALLED_APPS = (
 
     'gunicorn',
     'south',
+    'gravatar',
 
     'contact',
 )

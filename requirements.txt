@@ -1,9 +1,11 @@
 Django==1.5
-boto==2.8.0
-django-storages==1.1.6
-gunicorn==0.17.2
-wsgiref==0.1.2
 South==0.7.6
+boto==2.8.0
+distribute==0.6.28
 dj-database-url==0.2.1
+django-gravatar==0.1.0
+django-storages==1.1.6
 flake8==1.7.0
+gunicorn==0.17.2
 psycopg2==2.4.6
+wsgiref==0.1.2
