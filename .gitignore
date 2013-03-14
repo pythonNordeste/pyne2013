@@ -1,4 +1,5 @@
 venv
+pyne2013.db
 *.pyc
 *.sw[a-z]
 *.pyc
@@ -7,3 +8,4 @@ venv
 local_settings.py
 .env
 media/*
+media/

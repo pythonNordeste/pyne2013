@@ -20,7 +20,7 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='sqlite:///{0}'.format(join(PROJECT_DIR, 'pugpe.db')),
+        default='sqlite:///{0}'.format(join(PROJECT_DIR, 'pyne2013.db')),
     )
 }
 

@@ -338,6 +338,9 @@ section.dias article.dia:first-child dl,
 section.tipos article.tipo dl {
     border-right: dotted 1px #b79900;
 }
+section.tipos article.tipo:last-child dl {
+    border-right: none;
+}
 section.dias article.dia dl dt, 
 section.tipos article.tipo dl dt {
     font-family: "Xilosa", Arial, sans-serif;
