@@ -10,10 +10,18 @@
     <meta name="description" content="Primeira conferência Python que reune os PUGs (Python User Groups) da região Nordeste do Brasil">
     <meta name="keywords" content="palestras,python,nordeste">
     <meta name="viewport" content="width=device-width">
+    {% block ogtags %}
+    <meta property="og:title" content="Python Nordeste 2013" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="{{ STATIC_URL }}img/pyne2013.png" />
+    <meta property="og:url" content="http://pythonnordeste.org/" />
+    <meta property="og:site_name" content="Python Nordeste" />
+    {% endblock %}
     <title>Python Nordeste 2013</title>
     <link rel="stylesheet" href="{% static "css/normalize.css" %}">
     <link rel="stylesheet" href="{% static "css/main.css" %}">
     <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="shortcut icon" type="image/png" href="{{ STATIC_URL }}img/pyne2013.png" />
     <!--[if IE]><script src="{% static "js/html5.js" %}"></script><![endif]-->
     <script type="text/javascript" src="{% static "js/jquery.min.js" %}"></script>
     <script type="text/javascript" src="{% static "js/flexie.min.js" %}"></script>
