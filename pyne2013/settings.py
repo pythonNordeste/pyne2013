@@ -83,6 +83,7 @@ AWS_HEADERS = {
     'Expires': 'Sat, 30 Oct 2013 20:00:00 GMT',
     'Cache-Control': 'public, max-age=31556926'
 }
+AWS_QUERYSTRING_AUTH = False
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = os.environ.get('SECRET_KEY', 'pyne2013_dev')
