@@ -237,7 +237,7 @@ footer address {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 .ribbon {
-    background-color: #000;
+    background-color: #a00;
     overflow: hidden;
     /* top left corner */
     position: absolute;
@@ -251,7 +251,7 @@ footer address {
     -webkit-box-shadow: 0 0 1em #888;
 }
 .ribbon a {
-    border: 1px solid #aaa;
+    border: 1px solid #faa;
     color: #fff;
     display: block;
     font: bold 81.25% 'Helvetiva Neue', Helvetica, Arial, sans-serif;
