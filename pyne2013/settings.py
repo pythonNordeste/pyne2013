@@ -79,8 +79,9 @@ AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 AWS_STORAGE_BUCKET_NAME = os.environ.get('S3_BUCKET_NAME')
 AWS_HEADERS = {
-    'Expires': 'Thu, 25 May 2013 20:00:00 GMT',
-    'Cache-Control': 'public,max-age=31556926',
+    'x-amz-acl': 'public-read',
+    'Expires': 'Sat, 30 Oct 2013 20:00:00 GMT',
+    'Cache-Control': 'public, max-age=31556926'
 }
 
 # Make this unique, and don't share it with anybody.
