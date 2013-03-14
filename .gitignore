@@ -6,3 +6,4 @@ venv
 .idea
 local_settings.py
 .env
+media/*
