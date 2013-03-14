@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load gravatar webdesign %}
+{% load gravatar webdesign thumbnail %}
 {% block content %}
         <article role="article" id="evento">
             <!-- Define uma seção de uma página que consiste em uma composição que forma uma parte independente do documento. -->
@@ -20,6 +20,42 @@
                 assim a disseminação da cultura agregada ao tema e na
                 divulgação e estímulo de desenvolvimento na região nordeste.</p>
             </div>
+        </article>
+        <!-- Patrocinadores -->
+        <article role="article" id="patrocinadores">
+            <h3>Patrocinadores <a href="#menu" class="go-top">↑ menu</a></h3>
+            <section class="tipos">
+                <article class="tipo">
+                    <h4>Ouro</h4>
+                    <dl>
+                        {% for gold_sponsor in gold_sponsors %}
+                        <dd><a href="{{ gold_sponsor.link|default:'#' }}"><img src="{% thumbnail gold_sponsor.image 300x120 %}" alt="{{ gold_sponsor }}" class="pat pat-ouro"></a></dd>
+                        {% empty %}
+                        <dd><a href="#"><img src="http://placehold.it/300x120" alt="" class="pat pat-ouro"></a></dd>
+                        {% endfor %}
+                    </dl>
+                </article>
+                <article class="tipo">
+                    <h4>Prata</h4>
+                    <dl>
+                        {% for silver_sponsor in silver_sponsors %}
+                        <dd><a href="{{ silver_sponsor.link|default:'#' }}"><img src="{% thumbnail silver_sponsor.image 250x100 %}" alt="{{ silver_sponsor }}" class="pat pat-ouro"></a></dd>
+                        {% empty %}
+                        <dd><a href="#"><img src="http://placehold.it/250x100" alt="" class="pat pat-prata"></a></dd>
+                        {% endfor %}
+                    </dl>
+                </article>
+                <article class="tipo">
+                    <h4>Bronze</h4>
+                    <dl>
+                        {% for bronze_sponsor in bronze_sponsors %}
+                        <dd><a href="{{ bronze_sponsor.link|default:'#' }}"><img src="{% thumbnail bronze_sponsor.image 200x80 %}" alt="{{ bronze_sponsor }}" class="pat pat-ouro"></a></dd>
+                        {% empty %}
+                        <dd><a href="#"><img src="http://placehold.it/200x80" alt="" class="pat pat-bronze"></a></dd>
+                        {% endfor %}
+                    </dl>
+                </article>
+            </section>
         </article>
         <article role="article" id="programacao">
             <h3>Programação <a href="#menu" class="go-top">↑ menu</a></h3>

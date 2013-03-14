@@ -10,3 +10,5 @@ gunicorn==0.17.2
 psycopg2==2.4.6
 wsgiref==0.1.2
 python-dateutil==1.5
+PIL==1.1.7
+easy-thumbnails==1.2

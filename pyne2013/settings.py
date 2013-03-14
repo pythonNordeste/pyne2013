@@ -56,12 +56,14 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/var/www/example.com/media/"
-MEDIA_ROOT = ''
+MEDIA_ROOT = os.path.join(PROJECT_DIR, 'media')
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://example.com/media/", "http://media.example.com/"
-MEDIA_URL = ''
+MEDIA_URL = 'https://pyne2013.s3.amazonaws.com/'
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 STATIC_URL = 'https://pyne2013.s3.amazonaws.com/'
@@ -118,7 +120,9 @@ INSTALLED_APPS = (
     'gunicorn',
     'south',
     'gravatar',
+    'easy_thumbnails',
 
+    'core',
     'contact',
 )
 

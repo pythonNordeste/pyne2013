@@ -295,4 +295,64 @@ footer address {
 .article-content .speaker p {
     padding: 0;
     margin: 0;
+    text-align: justify;
+}
+
+/* Tabela de patrocinadores */
+/* Programação da PyNE 2013 */
+section.dias,
+section.tipos {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+section.dias article.dia,
+section.tipos article.tipo {
+    -webkit-flex: 1;
+    -ms-flexbox: 1;
+    flex: 1;
+    padding: 0;
+}
+section.dias article.dia h4,
+section.tipos article.tipo h4 {
+    background: #000;
+    font-family: "Xilosa", Arial, sans-serif;
+    font-size: 25px;
+    color: #fff;
+    padding: 5px 15px;
+
+    /* chrome hack */
+    display: block;
+    -webkit-margin-before: 20px;
+    -webkit-margin-after: 0;
+    font-weight: bold;
+}
+section.dias article.dia dl, 
+section.tipos article.tipo dl {
+    /* chrome hack */
+    display: block;
+    -webkit-margin-before: 20px;
+    -webkit-margin-after: 0;
+}
+section.dias article.dia:first-child dl, 
+section.tipos article.tipo dl {
+    border-right: dotted 1px #b79900;
+}
+section.dias article.dia dl dt, 
+section.tipos article.tipo dl dt {
+    font-family: "Xilosa", Arial, sans-serif;
+    font-size: 20px;
+}
+section.dias article.dia dl dd, 
+section.tipos article.tipo dl dd {
+    font-size: 0.8em;
+    margin: 0 13px 40px 13px;
+}
+section.dias article.dia dl dt, 
+section.tipos article.tipo dl dt {
+    padding: 5px 13px;
+}
+section.dias article.dia dl dt time {
+    float: right;
+    color: #b79900;
 }
