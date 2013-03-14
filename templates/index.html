@@ -1,11 +1,10 @@
 {% extends "base.html" %}
-{% load gravatar %}
+{% load gravatar webdesign %}
 {% block content %}
-
         <article role="article" id="evento">
             <!-- Define uma seção de uma página que consiste em uma composição que forma uma parte independente do documento. -->
             <h3>O Evento <a href="#menu" class="go-top">↑ menu</a></h3>
-            <div class="article-content rotacionar-direita">
+            <div class="article-content">
                 <p>A Python Nordeste é o maior encontro anual da região
                 nordeste para a comunidade. Em um
                 contexto bem diversificado e totalmente dedicado a troca
@@ -30,61 +29,38 @@
                         <h4>Dia 24</h4>
                         <dl>
                             <dt>Credenciamento <time datetime="2013-05-24T08:00Z">8:00h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                             <dt>Abertura <time datetime="2013-05-24T09:00Z">9:00h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                             <dt>Palestra 1<time datetime="2013-05-24T09:30Z">9:30h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                             <dt>Coffee Break<time datetime="2013-05-24T10:00Z">10:00h</time></dt>
                             <dt>Palestra 2<time datetime="2013-05-24T10:30Z">10:30h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                             <dt>Keynote 1<time datetime="2013-05-24T11:00Z">11:00h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                             <dt>Horário livre<time datetime="2013-05-24T12:00Z">12:00h</time></dt>
                             <dt>Palestra 3<time datetime="2013-05-24T13:30Z">13:30h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                             <dt>Palestra 4<time datetime="2013-05-24T14:10Z">14:10h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                             <dt>Palestra 5<time datetime="2013-05-24T14:50Z">14:50h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                             <dt>Coffee Break<time datetime="2013-05-24T15:20Z">15:20h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                             <dt>Palestra 6<time datetime="2013-05-24T15:50Z">15:50h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                             <dt>Palestra 7<time datetime="2013-05-24T116:30Z">16:30h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                             <dt>Keynote 2<time datetime="2013-05-24T117:00Z">17:00h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                         </dl>
                     </article>
                     <article class="dia">
                         <h4>Dia 25</h4>
                         <dl>
                             <dt>Abertura <time datetime="2013-05-25T08:00Z">8:00h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                             <dt>Palestra 8 <time datetime="2013-05-25T08:30Z">8:30h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                             <dt>Palestra 9 <time datetime="2013-05-25T09:10Z">9:10h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                             <dt>Coffee Break <time datetime="2013-05-25T09:50Z">9:50h</time></dt>
                             <dt>Palestra 10 <time datetime="2013-05-25T10:20Z">10:20h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                             <dt>Keynote 3 <time datetime="2013-05-25T11:00Z">11:00h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                             <dt>Horário livre<time datetime="2013-05-25T12:00Z">12:00h</time></dt>
                             <dt>Palestra 11 <time datetime="2013-05-25T13:30Z">13:30h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                             <dt>Palestra 12 <time datetime="2013-05-25T14:10Z">14:10h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                             <dt>Palestra 13 <time datetime="2013-05-25T14:50Z">14:50h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                             <dt>Coffee Break<time datetime="2013-05-25T15:20Z">15:20h</time></dt>
                             <dt>Palestra 14 <time datetime="2013-05-25T15:50Z">15:50h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                             <dt>Keynote 4 <time datetime="2013-05-25T16:30Z">16:30h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                             <dt>Encerramento <time datetime="2013-05-25T17:30Z">17:30h</time></dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
                         </dl>
                     </article>
                 </section>
@@ -94,22 +70,45 @@
         <article role="article" id="palestrantes">
             <h3>Palestrantes <a href="#menu" class="go-top">↑ menu</a></h3>
             <div class="article-content">
-                <a href="#"><img class="img-polaroid" src="{% gravatar_for_email "henrique@bastos.net" %}" alt="Henrique Bastos" /></a>
-                <a href="#"><img class="img-polaroid" src="{% gravatar_for_email "luciano@ramalho.org" %}" alt="Lucinao Ramalho" /></a>
-                <a href="#"><img class="img-polaroid" src="{% gravatar_for_email "alvarojusten@gmail.com" %}" alt="Álvaro Justen(Turicas)" /></a>
-                <a href="#"><img class="img-polaroid" src="{% gravatar_for_email "marcelo.laranjeira.melo@gmail.com" %}" alt="Marcelo Melo" /></a>
+                <section class="left">
+                    <article class="speaker">
+                        <a href="#"><img class="img-polaroid" src="{{ STATIC_URL }}img/henrique_80x80.png" alt="Henrique Bastos" /></a>
+                        <h3>Henrique Bastos</h3>
+                        <p>Henrique Bastos é apaixonado por desenvolvimento de software! É co-fundador da Dekode onde gera economia para seus clientes e parceiros aplicando tecnologias livres como Python, Django e Métodos Ágeis. É membro da Associação PythonBrasil e da Python Software Foundation, além de atuar constantemente nas comunidades de software organizando eventos e encontros, ministrando palestras, cursos e evangelizando o desenvolvimento sustentável de software, no Brasil e no exterior.</p>
+                    </article>
+                    <article class="speaker">
+                        <a href="#"><img class="img-polaroid" src="{{ STATIC_URL }}img/luciano_80x80.jpg" alt="Luciano Ramalho" /></a>
+                        <h3>Luciano Ramalho</h3>
+                        <p>Ramalho é sócio e professor nas Oficinas Turing. Foi diretor técnico do Brasil Online, primeiro portal da Abril S/A na Web. Liderou times para os portais IDG Now, BOL, UOL, AOL Brasil e outros, usando Python desde 1998. Como instrutor, atendeu clientes como Citibank, CPqD, Serpro, Presidência da República, Globo.com e Itaú. Ajudou a criar a Associação Python Brasil e foi seu presidente. É membro da Python Software Foundation e fundador do Garoa Hacker Clube, o primeiro hackerspace do Brasil.</p>
+                    </article>
+                </section>
+                <section class="right">
+                    <article class="speaker">
+                        <a href="#"><img class="img-polaroid" src="{{ STATIC_URL }}img/turicas_80x80.jpeg" alt="Álvaro Justen (Turicas)" /></a>
+                        <h3>Álvaro Justen (Turicas)</h3>
+                        <p>Amante de software livre, desenvolvedor Python e hobbyista com Arduino.</p>
+                        <p>Álvaro Justen, também conhecido como Turicas, é usuário e ativista de software livre há mais de 9 anos; colaborador de vários projetos de software livre; pythonista de carteirinha; disseminador do Arduino e entusiasta de metodologias ágeis. Participa assiduamente de eventos (organizando e palestrando), grupos de usuários e Coding Dojos.</p>
+                    </article>
+                    <article class="speaker">
+                        <a href="#"><img class="img-polaroid" src="{{ STATIC_URL }}img/marcelo_80x80.jpeg" alt="Marcelo Melo" /></a>
+                        <h3>Marcelo Melo</h3>
+                        <p>Entusiasta de tecnologia futurista, Tecnólogo em Redes de Computadores pela FIC, Pós-graduado em Redes Convergentes pela UNIFOR é CIO na empresa A3M Innovations. (www.a3minnovations.com.br) e mantenedor do grupo Arduino-CE (arduino-ce.blogspot.com.br).</p>
+                        <p>Atuante em projetos de inovação tecnológica, circuitos eletrônicos, hardware, desenvolvimento e treinamento. Seus principais interesses são: Software e Hardware Livres, Domótica, Redes de sensores sem fio, Robótica, Sistemas Embarcados, Monitoramento e controle via web.</p>
+                    </article>
+                </section>
+                <div class="clearfix"></div>
             </div>
         </article>
 
         <article role="article" id="local">
             <h3>Local <a href="#menu" class="go-top">↑ menu</a></h3>
-            <div class="article-content rotacionar-esquerda" style="padding: 0">
+            <div class="article-content" style="padding: 0">
                 <iframe style="margin: 0" width="100%" height="320" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.br/maps?ie=UTF8&amp;q=FA7+fortaleza&amp;fb=1&amp;gl=br&amp;hq=FA7&amp;hnear=0x7c74c3f464c783f:0x4661c60a0c6b37ca,Fortaleza+-+CE&amp;cid=0,0,4418356474795646493&amp;t=m&amp;ll=-3.769686,-38.483208&amp;spn=0.004282,0.007499&amp;z=17&amp;iwloc=A&amp;output=embed"></iframe>
             </div>
         </article>
         <article role="article" id="inscricoes">
             <h3>Inscrições <a href="#menu" class="go-top">↑ menu</a></h3>
-            <div class="article-content rotacionar-direita">
+            <div class="article-content">
                 <p>Texto informando como o usuário deverá proceder para se inscrever no evento.</p>
                 <iframe src="http://eventick.com.br/python-nordeste/embedded" frameborder="0" height="256px" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
             </div>

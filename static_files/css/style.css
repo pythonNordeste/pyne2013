@@ -263,3 +263,36 @@ footer address {
     text-shadow: 0 0 0.5em #444;
 }
 
+/* Palestrantes */
+.article-content .left, .article-content .right {
+    position: relative;
+    float: left;
+    display: block;
+    width: 45%;
+    margin: 20px 0;
+    padding: 0 2%;
+}
+
+.article-content .left {
+    border-right: dotted 1px #b79900;
+}
+
+.article-content .speaker {
+    margin-bottom: 30px;
+}
+
+.article-content .speaker img {
+    float: left;
+    margin: 0px 10px 5px 0px;
+}
+
+.article-content .speaker h3 {
+    font-size: 1.2em;
+    padding-top: 0;
+    margin-bottom: 5px;
+}
+
+.article-content .speaker p {
+    padding: 0;
+    margin: 0;
+}
