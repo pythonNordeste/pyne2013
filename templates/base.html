@@ -23,8 +23,6 @@
     <link rel="stylesheet" href="{% static "css/style.css" %}">
     <link rel="shortcut icon" type="image/png" href="{{ STATIC_URL }}img/pyne2013.png" />
     <!--[if IE]><script src="{% static "js/html5.js" %}"></script><![endif]-->
-    <script type="text/javascript" src="{% static "js/jquery.min.js" %}"></script>
-    <script type="text/javascript" src="{% static "js/flexie.min.js" %}"></script>
 </head>
 <body>
 <div class="ribbon">
@@ -68,6 +66,8 @@
         {% block content %}
         {% endblock %}
     </section>
+    <script type="text/javascript" src="{% static "js/jquery.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/flexie.min.js" %}"></script>
 </main>
 <footer role="contentinfo" class="clearfix">
 <!-- footer: role=”contentinfo”. Define uma região que contém informações sobre o documento. -->
