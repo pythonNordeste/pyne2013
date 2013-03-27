@@ -21,42 +21,45 @@
             divulgação e estímulo de desenvolvimento na região nordeste.</p>
         </div>
     </article>
-    <!-- Patrocinadores -->
-    <article role="article" id="patrocinadores">
-        <h3>Patrocinadores <a href="#menu" class="go-top">↑ menu</a></h3>
-        <section class="tipos">
-            <article class="tipo">
-                <h4>Ouro</h4>
-                <dl>
-                    {% for gold_sponsor in gold_sponsors %}
-                    <dd><a href="{{ gold_sponsor.link|default:'#' }}"><img src="{{ gold_sponsor.image.url }}" alt="{{ gold_sponsor }}" class="pat pat-ouro"></a></dd>
-                    {% empty %}
-                    <dd><a href="#"><img src="http://placehold.it/300x120" alt="" class="pat pat-ouro"></a></dd>
-                    {% endfor %}
-                </dl>
-            </article>
-            <article class="tipo">
-                <h4>Prata</h4>
-                <dl>
-                    {% for silver_sponsor in silver_sponsors %}
-                    <dd><a href="{{ silver_sponsor.link|default:'#' }}"><img src="{{ silver_sponsor.image.url }}" alt="{{ silver_sponsor }}" class="pat pat-ouro"></a></dd>
-                    {% empty %}
-                    <dd><a href="#"><img src="http://placehold.it/250x100" alt="" class="pat pat-prata"></a></dd>
-                    {% endfor %}
-                </dl>
-            </article>
-            <article class="tipo">
-                <h4>Bronze</h4>
-                <dl>
-                    {% for bronze_sponsor in bronze_sponsors %}
-                    <dd><a href="{{ bronze_sponsor.link|default:'#' }}"><img src="{{ bronze_sponsor.image.url }}" alt="{{ bronze_sponsor }}" class="pat pat-ouro"></a></dd>
-                    {% empty %}
-                    <dd><a href="#"><img src="http://placehold.it/200x80" alt="" class="pat pat-bronze"></a></dd>
-                    {% endfor %}
-                </dl>
-            </article>
-        </section>
+
+    <article role="article" id="palestrantes">
+        <h3>Palestrantes <a href="#menu" class="go-top">↑ menu</a></h3>
+        <div class="article-content">
+            <section class="left">
+                <article class="speaker">
+                    <a href="#"><img class="img-polaroid" src="{{ STATIC_URL }}img/henrique_80x80.png" alt="Henrique Bastos" /></a>
+                    <h3>Henrique Bastos</h3>
+                    <p>Twitter: <a href="http://twitter.com/henriquebastos">@henriquebastos</a></p>
+
+                    <p>Henrique Bastos é apaixonado por desenvolvimento de software! É co-fundador da Dekode onde gera economia para seus clientes e parceiros aplicando tecnologias livres como Python, Django e Métodos Ágeis. É membro da Associação PythonBrasil e da Python Software Foundation, além de atuar constantemente nas comunidades de software organizando eventos e encontros, ministrando palestras, cursos e evangelizando o desenvolvimento sustentável de software, no Brasil e no exterior.</p>
+                </article>
+                <article class="speaker">
+                    <a href="#"><img class="img-polaroid" src="{{ STATIC_URL }}img/luciano_80x80.jpg" alt="Luciano Ramalho" /></a>
+                    <h3>Luciano Ramalho</h3>
+                    <p>Twitter: <a href="http://twitter.com/ramalhoorg">@ramalhoorg</a></p>
+                    <p>Ramalho é sócio e professor nas Oficinas Turing. Foi diretor técnico do Brasil Online, primeiro portal da Abril S/A na Web. Liderou times para os portais IDG Now, BOL, UOL, AOL Brasil e outros, usando Python desde 1998. Como instrutor, atendeu clientes como Citibank, CPqD, Serpro, Presidência da República, Globo.com e Itaú. Ajudou a criar a Associação Python Brasil e foi seu presidente. É membro da Python Software Foundation e fundador do Garoa Hacker Clube, o primeiro hackerspace do Brasil.</p>
+                </article>
+            </section>
+            <section class="right">
+                <article class="speaker">
+                    <a href="#"><img class="img-polaroid" src="{{ STATIC_URL }}img/turicas_80x80.jpeg" alt="Álvaro Justen (Turicas)" /></a>
+                    <h3>Álvaro Justen (Turicas)</h3>
+                    <p>Twitter: <a href="http://twitter.com/turicas">@turicas</a></p>
+                    <p>Amante de software livre, desenvolvedor Python e hobbyista com Arduino.</p>
+                    <p>Álvaro Justen, também conhecido como Turicas, é usuário e ativista de software livre há mais de 9 anos; colaborador de vários projetos de software livre; pythonista de carteirinha; disseminador do Arduino e entusiasta de metodologias ágeis. Participa assiduamente de eventos (organizando e palestrando), grupos de usuários e Coding Dojos.</p>
+                </article>
+                <article class="speaker">
+                    <a href="#"><img class="img-polaroid" src="{{ STATIC_URL }}img/marcelo_80x80.jpeg" alt="Marcelo Melo" /></a>
+                    <h3>Marcelo Melo</h3>
+                    <p>Twitter: <a href="http://twitter.com/marcelorange">@marcelorange</a></p>
+                    <p>Entusiasta de tecnologia futurista, Tecnólogo em Redes de Computadores pela FIC, Pós-graduado em Redes Convergentes pela UNIFOR é CIO na empresa A3M Innovations. (www.a3minnovations.com.br) e mantenedor do grupo Arduino-CE (arduino-ce.blogspot.com.br).</p>
+                    <p>Atuante em projetos de inovação tecnológica, circuitos eletrônicos, hardware, desenvolvimento e treinamento. Seus principais interesses são: Software e Hardware Livres, Domótica, Redes de sensores sem fio, Robótica, Sistemas Embarcados, Monitoramento e controle via web.</p>
+                </article>
+            </section>
+            <div class="clearfix"></div>
+        </div>
     </article>
+
     <article role="article" id="programacao">
         <h3>Programação <a href="#menu" class="go-top">↑ menu</a></h3>
         <div class="article-content">
@@ -103,41 +106,11 @@
         </div>
     </article>
 
-    <article role="article" id="palestrantes">
-        <h3>Palestrantes <a href="#menu" class="go-top">↑ menu</a></h3>
+    <article role="article" id="inscricoes">
+        <h3>Inscrições <a href="#menu" class="go-top">↑ menu</a></h3>
         <div class="article-content">
-            <section class="left">
-                <article class="speaker">
-                    <a href="#"><img class="img-polaroid" src="{{ STATIC_URL }}img/henrique_80x80.png" alt="Henrique Bastos" /></a>
-                    <h3>Henrique Bastos</h3>
-                    <p>Twitter: <a href="http://twitter.com/henriquebastos">@henriquebastos</a></p>
-
-                    <p>Henrique Bastos é apaixonado por desenvolvimento de software! É co-fundador da Dekode onde gera economia para seus clientes e parceiros aplicando tecnologias livres como Python, Django e Métodos Ágeis. É membro da Associação PythonBrasil e da Python Software Foundation, além de atuar constantemente nas comunidades de software organizando eventos e encontros, ministrando palestras, cursos e evangelizando o desenvolvimento sustentável de software, no Brasil e no exterior.</p>
-                </article>
-                <article class="speaker">
-                    <a href="#"><img class="img-polaroid" src="{{ STATIC_URL }}img/luciano_80x80.jpg" alt="Luciano Ramalho" /></a>
-                    <h3>Luciano Ramalho</h3>
-                    <p>Twitter: <a href="http://twitter.com/ramalhoorg">@ramalhoorg</a></p>
-                    <p>Ramalho é sócio e professor nas Oficinas Turing. Foi diretor técnico do Brasil Online, primeiro portal da Abril S/A na Web. Liderou times para os portais IDG Now, BOL, UOL, AOL Brasil e outros, usando Python desde 1998. Como instrutor, atendeu clientes como Citibank, CPqD, Serpro, Presidência da República, Globo.com e Itaú. Ajudou a criar a Associação Python Brasil e foi seu presidente. É membro da Python Software Foundation e fundador do Garoa Hacker Clube, o primeiro hackerspace do Brasil.</p>
-                </article>
-            </section>
-            <section class="right">
-                <article class="speaker">
-                    <a href="#"><img class="img-polaroid" src="{{ STATIC_URL }}img/turicas_80x80.jpeg" alt="Álvaro Justen (Turicas)" /></a>
-                    <h3>Álvaro Justen (Turicas)</h3>
-                    <p>Twitter: <a href="http://twitter.com/turicas">@turicas</a></p>
-                    <p>Amante de software livre, desenvolvedor Python e hobbyista com Arduino.</p>
-                    <p>Álvaro Justen, também conhecido como Turicas, é usuário e ativista de software livre há mais de 9 anos; colaborador de vários projetos de software livre; pythonista de carteirinha; disseminador do Arduino e entusiasta de metodologias ágeis. Participa assiduamente de eventos (organizando e palestrando), grupos de usuários e Coding Dojos.</p>
-                </article>
-                <article class="speaker">
-                    <a href="#"><img class="img-polaroid" src="{{ STATIC_URL }}img/marcelo_80x80.jpeg" alt="Marcelo Melo" /></a>
-                    <h3>Marcelo Melo</h3>
-                    <p>Twitter: <a href="http://twitter.com/marcelorange">@marcelorange</a></p>
-                    <p>Entusiasta de tecnologia futurista, Tecnólogo em Redes de Computadores pela FIC, Pós-graduado em Redes Convergentes pela UNIFOR é CIO na empresa A3M Innovations. (www.a3minnovations.com.br) e mantenedor do grupo Arduino-CE (arduino-ce.blogspot.com.br).</p>
-                    <p>Atuante em projetos de inovação tecnológica, circuitos eletrônicos, hardware, desenvolvimento e treinamento. Seus principais interesses são: Software e Hardware Livres, Domótica, Redes de sensores sem fio, Robótica, Sistemas Embarcados, Monitoramento e controle via web.</p>
-                </article>
-            </section>
-            <div class="clearfix"></div>
+            <p>Aproveite e garanta já a sua inscrição. A compra do ingresso abaixo garante a sua inscrição para o evento nos dias 24 e 25 de maio.</p>
+            <iframe src="http://eventick.com.br/python-nordeste/embedded" frameborder="0" height="256px" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
         </div>
     </article>
 
@@ -147,11 +120,41 @@
             <iframe style="margin: 0" width="100%" height="320" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.br/maps?ie=UTF8&amp;q=FA7+fortaleza&amp;fb=1&amp;gl=br&amp;hq=FA7&amp;hnear=0x7c74c3f464c783f:0x4661c60a0c6b37ca,Fortaleza+-+CE&amp;cid=0,0,4418356474795646493&amp;t=m&amp;ll=-3.769686,-38.483208&amp;spn=0.004282,0.007499&amp;z=17&amp;iwloc=A&amp;output=embed"></iframe>
         </div>
     </article>
-    <article role="article" id="inscricoes">
-        <h3>Inscrições <a href="#menu" class="go-top">↑ menu</a></h3>
-        <div class="article-content">
-            <p>Aproveite e garanta já a sua inscrição. A compra do ingresso abaixo garante a sua inscrição para o evento nos dias 24 e 25 de maio.</p>
-            <iframe src="http://eventick.com.br/python-nordeste/embedded" frameborder="0" height="256px" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
-        </div>
+
+    <article role="article" id="patrocinadores">
+        <h3>Patrocinadores <a href="#menu" class="go-top">↑ menu</a></h3>
+        <section class="tipos">
+            <article class="tipo">
+                <h4>Ouro</h4>
+                <dl>
+                    {% for gold_sponsor in gold_sponsors %}
+                    <dd><a href="{{ gold_sponsor.link|default:'#' }}"><img src="{{ gold_sponsor.image.url }}" alt="{{ gold_sponsor }}" class="pat pat-ouro"></a></dd>
+                    {% empty %}
+                    <dd><a href="#"><img src="http://placehold.it/300x120" alt="" class="pat pat-ouro"></a></dd>
+                    {% endfor %}
+                </dl>
+            </article>
+            <article class="tipo">
+                <h4>Prata</h4>
+                <dl>
+                    {% for silver_sponsor in silver_sponsors %}
+                    <dd><a href="{{ silver_sponsor.link|default:'#' }}"><img src="{{ silver_sponsor.image.url }}" alt="{{ silver_sponsor }}" class="pat pat-ouro"></a></dd>
+                    {% empty %}
+                    <dd><a href="#"><img src="http://placehold.it/250x100" alt="" class="pat pat-prata"></a></dd>
+                    {% endfor %}
+                </dl>
+            </article>
+            <article class="tipo">
+                <h4>Bronze</h4>
+                <dl>
+                    {% for bronze_sponsor in bronze_sponsors %}
+                    <dd><a href="{{ bronze_sponsor.link|default:'#' }}"><img src="{{ bronze_sponsor.image.url }}" alt="{{ bronze_sponsor }}" class="pat pat-ouro"></a></dd>
+                    {% empty %}
+                    <dd><a href="#"><img src="http://placehold.it/200x80" alt="" class="pat pat-bronze"></a></dd>
+                    {% endfor %}
+                </dl>
+            </article>
+        </section>
     </article>
+
 {% endblock %}
