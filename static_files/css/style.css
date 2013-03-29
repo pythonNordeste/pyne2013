@@ -1,11 +1,20 @@
 /* Definindo as fontes do site */
 @font-face {
-    font-family: "Xilosa";
-    src: url(../fonts/xilosa.ttf);
+    font-family: 'Xilosa';
+    src: url('../fonts/xilosa.eot');
+    src: url('../fonts/xilosa.eot') format('embedded-opentype'),
+    url('../fonts/xilosa.woff') format('woff'),
+    url('../fonts/xilosa.ttf') format('truetype'),
+    url('../fonts/xilosa.svg#Xilosa') format('svg');
 }
+
 @font-face {
-    font-family: "Eldes Cordel 1";
-    src: url(../fonts/eldes_cordel_1_lite.ttf);
+    font-family: 'EldesCordel1Medium';
+    src: url('../fonts/eldes_cordel_1_lite.eot');
+    src: url('../fonts/eldes_cordel_1_lite.eot') format('embedded-opentype'),
+    url('../fonts/eldes_cordel_1_lite.woff') format('woff'),
+    url('../fonts/eldes_cordel_1_lite.ttf') format('truetype'),
+    url('../fonts/eldes_cordel_1_lite.svg#EldesCordel1Medium') format('svg');
 }
 
 /* Estilos globais */
@@ -56,7 +65,7 @@ header[role=banner] hgroup h1 {
 }
 header[role=banner] hgroup h2 {
     float: right;
-    font-family: "Eldes Cordel 1", Arial, sans-serif;
+    font-family: "EldesCordel1Medium", Arial, sans-serif;
     margin-top: 45px;
     font-size: 30px;
     margin-right: 50px;
@@ -205,7 +214,7 @@ footer {
     height: 216px;
 }
 footer address {
-    font-family: "Eldes Cordel 1", Arial, sans-serif;
+    font-family: "EldesCordel1Medium", Arial, sans-serif;
     font-size: 20px;
     margin-top: 180px;
     text-align: center;
@@ -235,6 +244,14 @@ footer address {
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.ribbon-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 175px;
+    height: 175px;
 }
 .ribbon {
     background-color: #a00;
@@ -358,4 +375,10 @@ section.tipos article.tipo dl dt {
 section.dias article.dia dl dt time {
     float: right;
     color: #b79900;
+}
+.addthis_toolbox {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 250px;
 }
