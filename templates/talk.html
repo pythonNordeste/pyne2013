@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+    <article role="article" id="palestra">
+        <h3>Palestra</h3>
+        <div class="article-content">
+            <article class="talk">
+                <h3>{{ talk.title }}</h3>
+                <p>{{ talk.abstract }}</p>
+                <h3>Referências</h3>
+                <ul>
+                    {% for ref in talk.references.all %}
+                        <li><a href="{{ ref.url }}">{{ ref.url }}</a></li>
+                    {% endfor %}
+                </ul>
+            </article>
+
+        </div> 
+    </article>
+    <article role="article" id="palestrante">
+        <h3>Palestrante</h3>
+        <div class="article-content">
+            <article class="talk">
+                <img class="img-polaroid" src="{{ STATIC_URL }}img/turicas_80x80.jpeg" alt="Álvaro Justen (Turicas)" />
+                <h3>{{ talk.speaker.name }}</h3>
+                {% if talk.speaker.twitter_profile %}
+                    <p>Twitter: <a href="{{ talk.speaker.get_twitter_url }}">{{ talk.speaker.twitter_profile }}</a></p>
+                {% endif %}
+                <p>{{ talk.speaker.short_bio }}</p>
+            </article>
+        </div>
+    </article>
+{% endblock %}
