@@ -67,39 +67,31 @@
                 <article class="dia">
                     <h4>Dia 24</h4>
                     <dl>
-                        <dt>Credenciamento <time datetime="2013-05-24T08:00Z">8:00h</time></dt>
-                        <dt>Abertura <time datetime="2013-05-24T09:00Z">9:00h</time></dt>
-                        <dt>Palestra 1<time datetime="2013-05-24T09:30Z">9:30h</time></dt>
-                        <dt>Coffee Break<time datetime="2013-05-24T10:00Z">10:00h</time></dt>
-                        <dt>Palestra 2<time datetime="2013-05-24T10:30Z">10:30h</time></dt>
-                        <dt>Keynote 1<time datetime="2013-05-24T11:00Z">11:00h</time></dt>
-                        <dt>Horário livre<time datetime="2013-05-24T12:00Z">12:00h</time></dt>
-                        <dt>Palestra 3<time datetime="2013-05-24T13:30Z">13:30h</time></dt>
-                        <dt>Palestra 4<time datetime="2013-05-24T14:10Z">14:10h</time></dt>
-                        <dt>Palestra 5<time datetime="2013-05-24T14:50Z">14:50h</time></dt>
-                        <dt>Coffee Break<time datetime="2013-05-24T15:20Z">15:20h</time></dt>
-                        <dt>Palestra 6<time datetime="2013-05-24T15:50Z">15:50h</time></dt>
-                        <dt>Palestra 7<time datetime="2013-05-24T116:30Z">16:30h</time></dt>
-                        <dt>Keynote 2<time datetime="2013-05-24T117:00Z">17:00h</time></dt>
+                        {% for slot in first_day_slots %}
+                            <dt>
+                                {% if slot.type == 'talk' %}
+                                    <a href="{% url 'talk' slot.id %}">{{ slot.title }}</a>
+                                {% else %}
+                                    {{ slot.title }}
+                                {% endif %}
+                                <time >{{ slot.time|date:"H:i" }}</time>
+                            </dt>
+                        {% endfor %}
                     </dl>
                 </article>
                 <article class="dia">
                     <h4>Dia 25</h4>
                     <dl>
-                        <dt>Abertura <time datetime="2013-05-25T08:00Z">8:00h</time></dt>
-                        <dt>Palestra 8 <time datetime="2013-05-25T08:30Z">8:30h</time></dt>
-                        <dt>Palestra 9 <time datetime="2013-05-25T09:10Z">9:10h</time></dt>
-                        <dt>Coffee Break <time datetime="2013-05-25T09:50Z">9:50h</time></dt>
-                        <dt>Palestra 10 <time datetime="2013-05-25T10:20Z">10:20h</time></dt>
-                        <dt>Keynote 3 <time datetime="2013-05-25T11:00Z">11:00h</time></dt>
-                        <dt>Horário livre<time datetime="2013-05-25T12:00Z">12:00h</time></dt>
-                        <dt>Palestra 11 <time datetime="2013-05-25T13:30Z">13:30h</time></dt>
-                        <dt>Palestra 12 <time datetime="2013-05-25T14:10Z">14:10h</time></dt>
-                        <dt>Palestra 13 <time datetime="2013-05-25T14:50Z">14:50h</time></dt>
-                        <dt>Coffee Break<time datetime="2013-05-25T15:20Z">15:20h</time></dt>
-                        <dt>Palestra 14 <time datetime="2013-05-25T15:50Z">15:50h</time></dt>
-                        <dt>Keynote 4 <time datetime="2013-05-25T16:30Z">16:30h</time></dt>
-                        <dt>Encerramento <time datetime="2013-05-25T17:30Z">17:30h</time></dt>
+                        {% for slot in second_day_slots %}
+                            <dt>
+                                {% if slot.type == 'talk' %}
+                                    <a href="{% url talk talk.id %}">{{ slot.title }}</a>
+                                {% else %}
+                                    {{ slot.title }}
+                                {% endif %}
+                                <time >{{ slot.time|date:"H:i" }}</time>
+                            </dt>
+                        {% endfor %}
                     </dl>
                 </article>
             </section>
