@@ -85,7 +85,7 @@
                         {% for slot in second_day_slots %}
                             <dt>
                                 {% if slot.type == 'talk' %}
-                                    <a href="{% url talk talk.id %}">{{ slot.title }}</a>
+                                    <a href="{% url 'talk' slot.id %}">{{ slot.title }}</a>
                                 {% else %}
                                     {{ slot.title }}
                                 {% endif %}
