@@ -1,14 +1,10 @@
 #coding: utf-8
 
 from .models import Slot
-from django.shortcuts import render, redirect
+from django.shortcuts import render, get_object_or_404
 
 
 def talk(request, talk_id):
     context = {}
-    talk = Slot.objects.filter(id=talk_id, type='talk')
-    if talk:
-        context['talk'] = talk[0]
-        return render(request, 'talk.html', context)
-    else:
-        return redirect('/')
+    context['talk'] = get_object_or_404(Slot, id=talk_id, type='talk')
+    return render(request, 'talk.html', context)
