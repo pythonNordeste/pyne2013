@@ -376,6 +376,31 @@ section.dias article.dia dl dt time {
     float: right;
     color: #b79900;
 }
+
+/*  Talks */
+
+.article-content .talk {
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+.article-content .talk img {
+    float: left;
+    margin: 0px 10px 5px 0px;
+}
+
+.article-content .talk h3 {
+    font-size: 1.2em;
+    padding-top: 0;
+    margin-bottom: 5px;
+}
+
+.article-content .talk p {
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+}
+
 .addthis_toolbox {
     position: absolute;
     top: 10px;

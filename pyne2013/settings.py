@@ -130,6 +130,7 @@ INSTALLED_APPS = (
 
     'core',
     'contact',
+    'schedule',
 )
 
 # A sample logging configuration. The only tangible logging
