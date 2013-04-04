@@ -22,7 +22,7 @@
         <h3>Palestrante</h3>
         <div class="article-content">
             <article class="talk">
-                <img class="img-polaroid" src="{% gravatar_for_email '{{ talk.speaker.email }}' %}" alt="{{ talk.speaker.name }}" />
+                <img class="img-polaroid" src="https://api.twitter.com/1/users/profile_image?screen_name={{ talk.speaker.twitter_profile }}&size=bigger" alt="{{ talk.speaker.name }}" />
                 <h3>{{ talk.speaker.name }}</h3>
                 {% if talk.speaker.twitter_profile %}
                     <p>Twitter: <a href="{{ talk.speaker.get_twitter_url }}">{{ talk.speaker.twitter_profile }}</a></p>
