@@ -8,6 +8,7 @@ setup: deps
 		@python manage.py syncdb
 		@python manage.py migrate
 	    @git remote add heroku git@heroku.com:pyne2013.git
+		@python manage.py loaddata schedule/fixtures/slots.json
 
 run:
 		@python manage.py runserver 0.0.0.0:8000
