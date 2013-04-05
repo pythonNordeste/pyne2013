@@ -1,0 +1,110 @@
+[
+{
+    "pk": 1, 
+    "model": "schedule.slot", 
+    "fields": {
+        "title": "Credenciamento ", 
+        "track": null, 
+        "abstract": "", 
+        "speaker": null, 
+        "time": "2013-04-24T11:00:00Z", 
+        "type": "others"
+    }
+},
+{
+    "pk": 2, 
+    "model": "schedule.slot", 
+    "fields": {
+        "title": "Coffee Break", 
+        "track": null, 
+        "abstract": "", 
+        "speaker": null, 
+        "time": "2013-05-24T13:00:00Z", 
+        "type": "others"
+    }
+},
+{
+    "pk": 3, 
+    "model": "schedule.slot", 
+    "fields": {
+        "title": "Hor\u00e1rio livre", 
+        "track": null, 
+        "abstract": "", 
+        "speaker": null, 
+        "time": "2013-05-24T15:00:00Z", 
+        "type": "others"
+    }
+},
+{
+    "pk": 4, 
+    "model": "schedule.slot", 
+    "fields": {
+        "title": "Coffee Break", 
+        "track": null, 
+        "abstract": "", 
+        "speaker": null, 
+        "time": "2013-05-24T18:20:00Z", 
+        "type": "others"
+    }
+},
+{
+    "pk": 5, 
+    "model": "schedule.slot", 
+    "fields": {
+        "title": "Abertura ", 
+        "track": null, 
+        "abstract": "", 
+        "speaker": null, 
+        "time": "2013-05-25T11:00:00Z", 
+        "type": "others"
+    }
+},
+{
+    "pk": 6, 
+    "model": "schedule.slot", 
+    "fields": {
+        "title": "Coffee Break ", 
+        "track": null, 
+        "abstract": "", 
+        "speaker": null, 
+        "time": "2013-05-25T12:50:00Z", 
+        "type": "others"
+    }
+},
+{
+    "pk": 7, 
+    "model": "schedule.slot", 
+    "fields": {
+        "title": "Hor\u00e1rio livre", 
+        "track": null, 
+        "abstract": "", 
+        "speaker": null, 
+        "time": "2013-05-25T15:00:00Z", 
+        "type": "others"
+    }
+},
+{
+    "pk": 8, 
+    "model": "schedule.slot", 
+    "fields": {
+        "title": "Coffee Break", 
+        "track": null, 
+        "abstract": "", 
+        "speaker": null, 
+        "time": "2013-05-25T18:20:00Z", 
+        "type": "others"
+    }
+},
+{
+    "pk": 9, 
+    "model": "schedule.slot", 
+    "fields": {
+        "title": "Encerramento ", 
+        "track": null, 
+        "abstract": "", 
+        "speaker": null, 
+        "time": "2013-05-25T20:30:00Z", 
+        "type": "others"
+    }
+}
+]
