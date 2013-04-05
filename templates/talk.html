@@ -8,12 +8,14 @@
             <article class="talk">
                 <h3>{{ talk.title }}</h3>
                 <p>{{ talk.abstract }}</p>
-                <h3>Referências</h3>
-                <ul>
-                    {% for ref in talk.references.all %}
-                        <li><a href="{{ ref.url }}">{{ ref.url }}</a></li>
-                    {% endfor %}
-                </ul>
+                {% if talk.references.all %}
+                    <h3>Referências</h3>
+                    <ul>
+                        {% for ref in talk.references.all %}
+                            <li><a href="{{ ref.url }}">{{ ref.url }}</a></li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
             </article>
 
         </div> 
