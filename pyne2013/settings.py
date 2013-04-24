@@ -131,6 +131,7 @@ INSTALLED_APPS = (
     'core',
     'contact',
     'schedule',
+    'hotels',
 )
 
 # A sample logging configuration. The only tangible logging

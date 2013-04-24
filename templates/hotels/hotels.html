@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load format_phone %}
+
+{% block title %}Onde ficar | {% endblock %}
+{% block content %}
+    <article role="article" id="">
+        <h3>Hotéis</h3>
+    </article>
+    {% for hotel in hotels %}
+    <article role="article" id="">
+        <h3></h3>
+        <div class="article-content">
+            <article class="talk">
+                <h2>{{ hotel.name|title }} - {{ hotel.get_type }}</h2>
+                <p><b>Endereço:</b> {{ hotel.address|title }}</p>
+                <p><b>Telefone:</b> {{ hotel.phone|format_phone }}</p>
+                <p><b>Ônibus:</b> {{ hotel.bus_description }}<p/>
+                <p><b>Descrição:</b> {{ hotel.description }}</p>
+                {% if hotel.link %}
+                <p><b>Site:</b> <a target="_blank" href="{{ hotel.link }}">{{ hotel.link }}</a></p>
+                {% endif %}
+                {% if hotel.bedroom_set.exists %}
+                    <h3>Quartos</h3>
+                    <table border="1">
+                        <tr>
+                            <th></th>
+                            <th>Preço</th>
+                            <th>Ar Condicionado</th>
+                            <th>Nº pessoas</th>
+                        </tr>
+                        {% for bedroom in hotel.bedroom_set.all %}
+                        <tr>
+                            <td>{{ forloop.counter }}</td>
+                            <td>{{ bedroom.price }}</td>
+                            <td>{{ bedroom.air_con|yesno }}</td>
+                            <td>{{ bedroom.max_people }}</td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                {% endif %}
+                {% if hotel.taxiroute_set.exists %}
+                    <h3>Tarifas de Taxi</h3>
+                    <table border="1">
+                        <tr>
+                            <th></th>
+                            <th>De</th>
+                            <th>Para</th>
+                            <th>Badeira 1</th>
+                            <th>Badeira 2</th>
+                        </tr>
+                        {% for bedroom in hotel.taxiroute_set.all %}
+                        <tr>
+                            <td>{{ forloop.counter }}</td>
+                            <td>{{ bedroom.fr }}</td>
+                            <td>{{ bedroom.to }}</td>
+                            <td>{{ bedroom.flag_1 }}</td>
+                            <td>{{ bedroom.flag_2 }}</td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                {% endif %}
+            </article>
+
+        </div> 
+    </article>
+    {% endfor %}
+{% endblock %}
