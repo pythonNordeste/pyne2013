@@ -1,0 +1,419 @@
+[
+{
+    "pk": 1, 
+    "model": "hotels.hotel", 
+    "fields": {
+        "bus_description": "\u00f4nibus pr\u00f3ximo (com destino a Fa7): Edson Queiroz/Centro (anda aproximadamente 3 quarteir\u00f5es at\u00e9 a parada)", 
+        "name": "cearoca hostel", 
+        "hotel_type": "hostel", 
+        "created_at": "2013-04-23T23:57:46.057Z", 
+        "phone": "8530677468", 
+        "link": "http://www.cearocahostels.com/", 
+        "address": "Rua Monsenhor Bruno, 1479", 
+        "description": "caf\u00e9 da manh\u00e3, com wifi"
+    }
+},
+{
+    "pk": 2, 
+    "model": "hotels.hotel", 
+    "fields": {
+        "bus_description": "\u00f4nibus pr\u00f3ximo (com destino a terminal): Qualquer \u00f4nibus que passe na Av. Dom Lu\u00eds (anda aproximadamente 3 quarteir\u00f5es at\u00e9 a parada)", 
+        "name": "pousada veleiro (pr\u00f3ximo a at home hostel)", 
+        "hotel_type": "inn", 
+        "created_at": "2013-04-24T00:41:29.642Z", 
+        "phone": "8532678324", 
+        "link": "", 
+        "address": "rua coronel juc\u00e1, 146", 
+        "description": "caf\u00e9 da manh\u00e3, com wifi"
+    }
+},
+{
+    "pk": 3, 
+    "model": "hotels.hotel", 
+    "fields": {
+        "bus_description": "\u00f4nibus pr\u00f3ximo (com destino a terminal): Qualquer \u00f4nibus que passe na Av. Santos Dumont (anda aproximadamente 3 quarteir\u00f5es at\u00e9 a parada)", 
+        "name": "hostel terra da luz", 
+        "hotel_type": "hostel", 
+        "created_at": "2013-04-24T02:20:10.486Z", 
+        "phone": "85 308202260", 
+        "link": "", 
+        "address": "rua rodriges junior, 278", 
+        "description": "caf\u00e9 da manh\u00e3, com wifi"
+    }
+},
+{
+    "pk": 4, 
+    "model": "hotels.hotel", 
+    "fields": {
+        "bus_description": "\u00f4nibus pr\u00f3ximo (com destino a terminal): Qualquer \u00f4nibus que passe na Av. Dom Lu\u00eds (anda aproximadamente 3 quarteir\u00f5es at\u00e9 a parada)", 
+        "name": "at home hostel (pr\u00f3ximo a pousada veleiro)", 
+        "hotel_type": "hostel", 
+        "created_at": "2013-04-24T02:22:07.926Z", 
+        "phone": "8530772233", 
+        "link": "", 
+        "address": "rua canuto de aguiar, 1424", 
+        "description": "caf\u00e9 da manh\u00e3, com wifi"
+    }
+},
+{
+    "pk": 5, 
+    "model": "hotels.hotel", 
+    "fields": {
+        "bus_description": "\u00d4nibus pr\u00f3ximo (com destino a Fa7): Edson Queiroz/Centro (anda aproximadamente 2 quarteir\u00f5es at\u00e9 a parada).\r\nPode ocorrer diminui\u00e7\u00e3o do valor caso v\u00e1 20 ou mais pessoas (n\u00e3o confirmado com o hotel)\r\n", 
+        "name": "hotel san phillip", 
+        "hotel_type": "hostel", 
+        "created_at": "2013-04-24T02:25:05.955Z", 
+        "phone": "8532615451", 
+        "link": "", 
+        "address": "av. padre antonio tomaz, 50", 
+        "description": "caf\u00e9 da manh\u00e3, com wifi"
+    }
+},
+{
+    "pk": 6, 
+    "model": "hotels.hotel", 
+    "fields": {
+        "bus_description": "", 
+        "name": "hotel adaba mistral", 
+        "hotel_type": "hotel", 
+        "created_at": "2013-04-24T02:27:26.807Z", 
+        "phone": "8533918888", 
+        "link": "", 
+        "address": "rua deputado moreira da rocha 504", 
+        "description": "caf\u00e9 da manh\u00e3, wifi em todos os quartos"
+    }
+},
+{
+    "pk": 7, 
+    "model": "hotels.hotel", 
+    "fields": {
+        "bus_description": "", 
+        "name": "hotel malibu", 
+        "hotel_type": "hotel", 
+        "created_at": "2013-04-24T02:30:02.389Z", 
+        "phone": "8588023254", 
+        "link": "", 
+        "address": "av. rui barbosa, 900", 
+        "description": "Caf\u00e9 da manh\u00e3, wifi em alguns quartos e na recep\u00e7\u00e3o.\r\nPara ter acesso a estes valores, falar que \u00e9 para o evento python nordeste\r\n"
+    }
+},
+{
+    "pk": 1, 
+    "model": "hotels.bedroom", 
+    "fields": {
+        "max_people": 7, 
+        "price": "30", 
+        "hotel": 1, 
+        "min_people": null, 
+        "air_con": true
+    }
+},
+{
+    "pk": 2, 
+    "model": "hotels.bedroom", 
+    "fields": {
+        "max_people": 4, 
+        "price": "35", 
+        "hotel": 1, 
+        "min_people": null, 
+        "air_con": true
+    }
+},
+{
+    "pk": 3, 
+    "model": "hotels.bedroom", 
+    "fields": {
+        "max_people": 1, 
+        "price": "85", 
+        "hotel": 2, 
+        "min_people": null, 
+        "air_con": true
+    }
+},
+{
+    "pk": 4, 
+    "model": "hotels.bedroom", 
+    "fields": {
+        "max_people": 2, 
+        "price": "90", 
+        "hotel": 2, 
+        "min_people": null, 
+        "air_con": true
+    }
+},
+{
+    "pk": 5, 
+    "model": "hotels.bedroom", 
+    "fields": {
+        "max_people": 5, 
+        "price": "35", 
+        "hotel": 3, 
+        "min_people": null, 
+        "air_con": false
+    }
+},
+{
+    "pk": 6, 
+    "model": "hotels.bedroom", 
+    "fields": {
+        "max_people": 5, 
+        "price": "40", 
+        "hotel": 3, 
+        "min_people": null, 
+        "air_con": true
+    }
+},
+{
+    "pk": 7, 
+    "model": "hotels.bedroom", 
+    "fields": {
+        "max_people": 6, 
+        "price": "30", 
+        "hotel": 4, 
+        "min_people": null, 
+        "air_con": false
+    }
+},
+{
+    "pk": 8, 
+    "model": "hotels.bedroom", 
+    "fields": {
+        "max_people": 4, 
+        "price": "87.5", 
+        "hotel": 5, 
+        "min_people": null, 
+        "air_con": true
+    }
+},
+{
+    "pk": 9, 
+    "model": "hotels.bedroom", 
+    "fields": {
+        "max_people": 3, 
+        "price": "90", 
+        "hotel": 5, 
+        "min_people": null, 
+        "air_con": true
+    }
+},
+{
+    "pk": 10, 
+    "model": "hotels.bedroom", 
+    "fields": {
+        "max_people": 1, 
+        "price": "145", 
+        "hotel": 6, 
+        "min_people": null, 
+        "air_con": true
+    }
+},
+{
+    "pk": 11, 
+    "model": "hotels.bedroom", 
+    "fields": {
+        "max_people": 2, 
+        "price": "80", 
+        "hotel": 6, 
+        "min_people": null, 
+        "air_con": true
+    }
+},
+{
+    "pk": 12, 
+    "model": "hotels.bedroom", 
+    "fields": {
+        "max_people": 3, 
+        "price": "80", 
+        "hotel": 6, 
+        "min_people": null, 
+        "air_con": true
+    }
+},
+{
+    "pk": 13, 
+    "model": "hotels.bedroom", 
+    "fields": {
+        "max_people": 1, 
+        "price": "100", 
+        "hotel": 7, 
+        "min_people": null, 
+        "air_con": true
+    }
+},
+{
+    "pk": 14, 
+    "model": "hotels.bedroom", 
+    "fields": {
+        "max_people": 2, 
+        "price": "65", 
+        "hotel": 7, 
+        "min_people": null, 
+        "air_con": true
+    }
+},
+{
+    "pk": 15, 
+    "model": "hotels.bedroom", 
+    "fields": {
+        "max_people": 3, 
+        "price": "65", 
+        "hotel": 7, 
+        "min_people": null, 
+        "air_con": true
+    }
+},
+{
+    "pk": 1, 
+    "model": "hotels.taxiroute", 
+    "fields": {
+        "flag_1": "25.02", 
+        "to": "Pousada", 
+        "fr": "Aeroporto", 
+        "hotel": 2, 
+        "flag_2": "35.45"
+    }
+},
+{
+    "pk": 2, 
+    "model": "hotels.taxiroute", 
+    "fields": {
+        "flag_1": "14.33", 
+        "to": "Evento", 
+        "fr": "Pousada ", 
+        "hotel": 2, 
+        "flag_2": "19.47"
+    }
+},
+{
+    "pk": 3, 
+    "model": "hotels.taxiroute", 
+    "fields": {
+        "flag_1": "23.17", 
+        "to": "Hostel", 
+        "fr": "Aeroporto", 
+        "hotel": 1, 
+        "flag_2": "32.64"
+    }
+},
+{
+    "pk": 4, 
+    "model": "hotels.taxiroute", 
+    "fields": {
+        "flag_1": "16.66", 
+        "to": "Evento", 
+        "fr": "Hostel", 
+        "hotel": 1, 
+        "flag_2": "22.94"
+    }
+},
+{
+    "pk": 5, 
+    "model": "hotels.taxiroute", 
+    "fields": {
+        "flag_1": "21.01", 
+        "to": "Hostel", 
+        "fr": "Aeroporto", 
+        "hotel": 3, 
+        "flag_2": "29.44"
+    }
+},
+{
+    "pk": 6, 
+    "model": "hotels.taxiroute", 
+    "fields": {
+        "flag_1": "19.77", 
+        "to": "Evento", 
+        "fr": "Hostel", 
+        "hotel": 3, 
+        "flag_2": "27.55"
+    }
+},
+{
+    "pk": 7, 
+    "model": "hotels.taxiroute", 
+    "fields": {
+        "flag_1": "24.89", 
+        "to": "Hostel", 
+        "fr": "Aeroporto", 
+        "hotel": 4, 
+        "flag_2": "35.26"
+    }
+},
+{
+    "pk": 8, 
+    "model": "hotels.taxiroute", 
+    "fields": {
+        "flag_1": "14.45", 
+        "to": "Evento", 
+        "fr": "Hostel", 
+        "hotel": 4, 
+        "flag_2": "19.64"
+    }
+},
+{
+    "pk": 9, 
+    "model": "hotels.taxiroute", 
+    "fields": {
+        "flag_1": "23.46", 
+        "to": "Hotel", 
+        "fr": "Aeroporto", 
+        "hotel": 5, 
+        "flag_2": "33.08"
+    }
+},
+{
+    "pk": 10, 
+    "model": "hotels.taxiroute", 
+    "fields": {
+        "flag_1": "14.3", 
+        "to": "Evento", 
+        "fr": "Hotel", 
+        "hotel": 5, 
+        "flag_2": "19.46"
+    }
+},
+{
+    "pk": 11, 
+    "model": "hotels.taxiroute", 
+    "fields": {
+        "flag_1": "23.66", 
+        "to": "Hotel", 
+        "fr": "Aeroporto", 
+        "hotel": 6, 
+        "flag_2": "33.35"
+    }
+},
+{
+    "pk": 12, 
+    "model": "hotels.taxiroute", 
+    "fields": {
+        "flag_1": "18.84", 
+        "to": "Evento", 
+        "fr": "Hotel", 
+        "hotel": 6, 
+        "flag_2": "26.15"
+    }
+},
+{
+    "pk": 13, 
+    "model": "hotels.taxiroute", 
+    "fields": {
+        "flag_1": "23.53", 
+        "to": "Hotel", 
+        "fr": "Aeroporto", 
+        "hotel": 7, 
+        "flag_2": "33.15"
+    }
+},
+{
+    "pk": 14, 
+    "model": "hotels.taxiroute", 
+    "fields": {
+        "flag_1": "18.09", 
+        "to": "Evento", 
+        "fr": "Hostel", 
+        "hotel": 7, 
+        "flag_2": "25.04"
+    }
+}
+]

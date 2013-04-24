@@ -14,8 +14,8 @@
                 <h2>{{ hotel.name|title }} - {{ hotel.get_type }}</h2>
                 <p><b>Endereço:</b> {{ hotel.address|title }}</p>
                 <p><b>Telefone:</b> {{ hotel.phone|format_phone }}</p>
-                <p><b>Ônibus:</b> {{ hotel.bus_description }}<p/>
-                <p><b>Descrição:</b> {{ hotel.description }}</p>
+                <p><b>Ônibus:</b> {{ hotel.bus_description|capfirst|linebreaksbr }}<p/>
+                <p><b>Descrição:</b> {{ hotel.description|capfirst|linebreaksbr }}</p>
                 {% if hotel.link %}
                 <p><b>Site:</b> <a target="_blank" href="{{ hotel.link }}">{{ hotel.link }}</a></p>
                 {% endif %}
