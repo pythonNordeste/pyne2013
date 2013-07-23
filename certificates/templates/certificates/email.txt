@@ -1,0 +1,6 @@
+Prezado(a) {{ enrollment.name }},
+segue em anexo o seu certificado de participação na Python Nordeste de 2012.
+
+Agradecemos a sua participação e esperamos vê-lo(a) nos próximos eventos.
+
+Equipe Python Nordeste

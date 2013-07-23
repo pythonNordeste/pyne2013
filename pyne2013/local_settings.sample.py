@@ -8,3 +8,5 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = STATICFILES_STORAGE
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

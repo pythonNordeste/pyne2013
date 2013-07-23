@@ -1,0 +1,8 @@
+<font size=22><b>Certificado de Participação</b></font>
+<para align="right"><img valign="bottom" src="{{ logo_path }}" /></para>
+Certificamos para os devidos fins que <b>{{ enrollment.name }}</b> {% if enrollment.cpf %}registrado sobre o CPF <b>{{ enrollment.cpf }}</b> {% endif %}participou do evento <b>Python Nordeste 2013</b>, com carga horária de <b>16 horas</b> realizado no entre os dias 24 e 25 de maio de 2013. 
+
+Atenciosamente,
+Equipe Python Nordeste
+<para align="center"><img valign="bottom" src="{{ signature_path }}" /></para>
+<para align="center">Marcel Pinheiro Caraciolo</para>
