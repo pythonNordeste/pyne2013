@@ -168,7 +168,7 @@ LOGGING = {
 
 # E-mails
 DEFAULT_FROM_EMAIL = os.environ.get(
-    'DEFAULT_FROM_EMAIL', 'Python Nordeste <pythonnordeste2013@gmail.com>'
+    'DEFAULT_FROM_EMAIL', 'Python Nordeste <organizacao@pug.pe>'
 )
 EMAIL_USE_TLS = True
 EMAIL_HOST = os.environ.get('EMAIL_HOST', 'smtp.gmail.com')

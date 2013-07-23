@@ -22,8 +22,11 @@ class EnrollmentAdmin(admin.ModelAdmin):
         for enrollment in queryset:
             context = {'enrollment': enrollment}
             message = render_to_string('certificates/email.txt', context)
-            email = EmailMessage(subject, message, settings.DEFAULT_FROM_EMAIL,
-                [enrollment.email])
+            email = EmailMessage(
+                subject, message, settings.DEFAULT_FROM_EMAIL,
+                [enrollment.email], 
+                headers={'Reply-To': 'pythonnordeste2013@gmail.com'}
+            )
             certificate_file = default_storage.open(enrollment.certificate.name)
             email.attach('certificado.pdf', certificate_file.read())
             email.send()
