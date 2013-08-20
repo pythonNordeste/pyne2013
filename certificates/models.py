@@ -42,6 +42,7 @@ class Enrollment(models.Model):
         verbose_name = u'Inscrição'
         verbose_name_plural = u'Inscrições'
 
+
 def pre_save_enrollment(signal, sender, instance, **kwargs):
     images_path = os.path.join(settings.PROJECT_DIR, 'static_files', 'img')
     signature_path = os.path.join(images_path, 'signature.jpg')

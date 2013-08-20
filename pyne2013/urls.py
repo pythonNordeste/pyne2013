@@ -11,5 +11,6 @@ urlpatterns = patterns(
     url(r'^admin/', include(admin.site.urls)),
     url(r'^talk/', include('schedule.urls')),
     url(r'^hoteis/', include('hotels.urls')),
+    url(r'^certificados/', include('certificates.urls')),
     url('^pages/', include('django.contrib.flatpages.urls')),
 )

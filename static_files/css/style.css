@@ -402,3 +402,18 @@ a {
     color: black;
     text-decoration: none;
 }
+
+/* pure forms */
+form.pure-form {
+    margin: 2em 0;
+}
+.errorlist {
+    color: #e9322d;
+    margin: 0 0 0 10.4em;
+    list-style: none;
+    padding: 0;
+}
+table.pure-table {
+    width: 100%;
+    margin: 2em 0;
+}

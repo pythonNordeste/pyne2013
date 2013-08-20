@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}Baixar Certificado | {% endblock %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.1/pure-min.css" />
+{% endblock %}
+
+{% block content %}
+<article role="article">
+    <h3>Baixar Certificado</h3>
+    <div class="article-content">
+        {% if enrollments %}
+            <table class="pure-table pure-table-bordered" style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Certificado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for enrollment in enrollments %}
+                    <tr>
+                        <td>
+                            {{ enrollment.name }}
+                        </td>
+                        <td>
+                            <a href="{{ enrollment.certificate.url }}">Baixar</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <form action="" method="post" class="pure-form pure-form-aligned">
+                {% csrf_token %}
+                {% for field in form %}
+                <div class="pure-control-group">
+                    {{ field.label_tag }}
+                    {{ field }}
+                    {{ field.errors }}
+                </div>
+                {% endfor %}
+                <div class="pure-controls">
+                    <button type="submit" class="pure-button pure-button-primary">Buscar</button>
+                </div>
+            </form>
+        {% endif %}
+    </div>
+</article>
+{% endblock %}
+
+{% block extrabody %}
+<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.maskedinput.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("#id_cpf").mask("999.999.999-99");
+});
+</script>
+{% endblock %}
