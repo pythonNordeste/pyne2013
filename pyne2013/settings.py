@@ -27,8 +27,7 @@ DATABASES = {
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ['www.pythonnordeste.org',
-                 'pythonnordeste.org',
+ALLOWED_HOSTS = ['2013.pythonnordeste.org',
                  'pyne2013.herokuapp.com']
 
 # Local time zone for this installation. Choices can be found here:
